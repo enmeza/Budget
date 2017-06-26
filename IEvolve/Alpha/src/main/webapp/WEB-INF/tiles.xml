@@ -3,15 +3,26 @@
     
 <tiles-definitions>
 
-	<!-- Templates -->
-        
+	<!-- Layouts -->
 	<definition name="layout.home" template="/WEB-INF/views/tiles/index.jsp">
 	    <put-attribute name="title" value="main page" />
 	    <put-attribute name="header" value="/WEB-INF/views/tiles/header.jsp" />
 	    <put-attribute name="body" value="" />
 	    <put-attribute name="footer" value="/WEB-INF/views/tiles/footer.jsp" />
 	</definition>
-
+	<!-- End Layouts -->
+	
+	<definition name="login" template="/WEB-INF/views/tiles/login.jsp">
+	    <put-attribute name="title" value="Login" />
+	    <put-attribute name="body" value="" />
+	</definition>
+	
+	<!-- Add User Page -->
+   	<definition name="login.add.user" extends="layout.home">
+       	<put-attribute name="title" value="Add new user" />
+    	<put-attribute name="body" value="/WEB-INF/views/login/addUser.jsp" />  
+   	</definition>
+	
 	<!-- budget Page -->
    <definition name="budget.home" extends="layout.home">
        <put-attribute name="title" value="View budget" />

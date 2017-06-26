@@ -1,17 +1,9 @@
 @CHARSET "ISO-8859-1";
 
-body div.header{
-}
-
-div.form-container {
+div.login-container {
 	width: 700px;
     padding: 20px;
     border: 1px #204d74 solid;
     margin-top: 50px;
     border-radius: 25px;
-}
-
-div.btn-save-user {
-	text-align: right;
-    margin-top: 10px;
 }
